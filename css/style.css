@@ -12,10 +12,59 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #fff;
 }
 
-header,
-section,
-footer {
-  border: 1px solid red;
+.color1 {
+  color: #fff;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  padding: 30px 50px;
+  line-height: 20px;
+}
+
+header .brand {
+  font-size: 18px;
+}
+
+header .menu-icon i {
+  font-size: 20px;
+}
+
+header .menu:hover {
+  color: #acb7c3;
+}
+
+header .menu ul {
+  display: none;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 445px) {
+  header .logo {
+    font-size: 18px;
+  }
+
+  header .menu ul {
+    display: block;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  header .menu .menu-icon {
+    display: none;
+  }
+
+  header .menu ul a {
+    font-size: 15px;
+  }
 }
