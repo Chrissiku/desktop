@@ -364,9 +364,9 @@ section.about .card .card-detail .card-link ul li a {
     gap: 20px;
   }
 
-  section.about .card .card-image img {
-    padding: 0;    
-    height: 400px;
+  section.about .card .card-image img {  
+    width : 100%;
+    height: 100%;
   }
 
   /* section.about .card .card-detail {
