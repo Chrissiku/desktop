@@ -19,6 +19,9 @@ body {
   color: #fff;
 }
 
+.color2 {
+  color: #9390ff;
+}
 header {
   width: 100%;
   display: flex;
@@ -60,7 +63,6 @@ section.portfolio {
   justify-content: space-between;
   background: url(../images/Top_circles.png) top center no-repeat;
   font-family: "Roboto", sans-serif;
-  border: 1px solid red;
 }
 
 section.portfolio .portfolio-head {
@@ -71,7 +73,6 @@ section.portfolio .portfolio-head h1 {
   font-size: 48px;
   font-weight: 700;
   line-height: 72px;
-  color: #7d73fc;
 }
 
 section.portfolio .portfolio-head h2 {
@@ -94,7 +95,7 @@ section.portfolio .portfolio-infos p {
   color: #c8c8d4;
 }
 
-section.portfolio .portfolio-infos .line {
+.line {
   border: 1px solid #646369;
   width: 85%;
   margin: auto;
@@ -156,6 +157,112 @@ section.portfolio .portfolio-link .work i {
 
 section.portfolio .portfolio-link .work-one {
   display: none;
+}
+
+.btn {
+  background: #7d73fc;
+  color: #fff;
+  border: none;
+  width: 100px;
+  height: 50px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #7a71f7;
+}
+
+.btn:focus {
+  background: #5e42d7;
+}
+
+.btn:active {
+  background: #7d73fc;
+}
+
+.btn:disabled {
+  background: #2a2b33;
+}
+
+section.about {
+  background-image: url(../images/bg_about.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid red;
+}
+
+section.about h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+section.about .line {
+  width: 100%;
+}
+
+section.about .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section.about .card .card-image img {
+  width: 100%;
+}
+
+section.about .card .card-detail {
+  color: #fff;
+}
+
+section.about .card .card-detail h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  padding: 20px 20px 20px 0;
+}
+
+section.about .card .card-detail P {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #cacad1;
+}
+
+section.about .card .card-detail .card-link {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+section.about .card .card-detail .card-link ul {
+  display: flex;
+  list-style: none;
+}
+
+section.about .card .card-detail .card-link ul li {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  border-right: 1px solid #555;
+  padding: 8px 10px;
+}
+
+section.about .card .card-detail .card-link ul li:last-child {
+  border: none;
+}
+
+section.about .card .card-detail .card-link ul li a {
+  color: #fff;
 }
 
 /* Media Queries */
@@ -238,5 +345,50 @@ section.portfolio .portfolio-link .work-one {
 
   section.portfolio .portfolio-link .work-one {
     display: block;
+  }
+
+  section.about h2 {
+    font-size: 64px;
+    line-height: 114px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  section.about .card {
+    display: grid;
+    grid-template: auto/ 50% 50%;
+    padding: 40px 0;
+    width: 90%;
+    margin: auto;
+    height: 500px;
+    gap: 20px;
+  }
+
+  section.about .card .card-image img {
+    padding: 0;    
+    height: 400px;
+  }
+
+  /* section.about .card .card-detail {
+
+  } */
+
+  section.about .pair .card-detail {
+    grid-row-end: 1;
+  }
+
+  section.about .card .card-detail h3 {
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 500;
+    padding: 20px 0 20px 0;
+  }
+
+  section.about .card .card-detail P {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #cacad1;
   }
 }
