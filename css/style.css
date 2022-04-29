@@ -193,7 +193,6 @@ section.about {
   width: 100%;
   margin: auto;
   padding: 20px;
-  border: 1px solid red;
 }
 
 section.about h2 {
@@ -265,7 +264,92 @@ section.about .card .card-detail .card-link ul li a {
   color: #fff;
 }
 
-/* Media Queries */
+section.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.contact .contact-title1 {
+  display: none;
+}
+
+section.contact .title {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+section.contact .contact-text {
+  padding: 20px;
+  text-align: center;
+}
+
+section.contact .contact-text p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: #cacad1;
+}
+
+section.contact .contact-form {
+  width: 100%;
+  padding: 0 20px;
+}
+
+section.contact .contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+section.contact .contact-form form input {
+  width: 100%;
+  height: 48px;
+}
+
+section.contact .contact-form form input,
+section.contact .contact-form form textarea {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #191765;
+  padding: 20px;
+}
+
+section.contact .contact-form form textarea {
+  width: 100%;
+  height: 150px;
+  padding: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+  
+}
+
+footer .foot-line {
+  border: 1px solid #3a3837;
+  width: 100%;
+}
+
+footer .footer-content p a {
+  color: #fff;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+/* Media Query for Desktop vesion */
 
 @media screen and (min-width: 768px) {
   header .logo {
@@ -364,15 +448,11 @@ section.about .card .card-detail .card-link ul li a {
     gap: 20px;
   }
 
-  section.about .card .card-image img {  
-    width : 100%;
+  section.about .card .card-image img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
   }
-
-  /* section.about .card .card-detail {
-
-  } */
 
   section.about .pair .card-detail {
     grid-row-end: 1;
@@ -391,5 +471,47 @@ section.about .card .card-detail .card-link ul li a {
     font-weight: 400;
     line-height: 28px;
     color: #cacad1;
+  }
+
+  section.contact {
+    padding: 0 130px;
+  }
+
+  section.contact .contact-title1 {
+    display: block;
+  }
+
+  section.contact .contact-title2 {
+    display: none;
+  }
+
+  section.contact .title {
+    font-size: 40px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+  }
+
+  section.contact .contact-text {
+    padding: 40px;
+    text-align: center;
+  }
+
+  section.contact .contact-text p {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  }
+
+  section.contact .contact-form {
+    margin: 20px 0;
+  }
+
+  footer .footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
   }
 }
